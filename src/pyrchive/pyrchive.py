@@ -46,10 +46,3 @@ class ArchiveSesh:
             print(f"Waiting for next iteration... ({iter} of {max_iter})")
             time.sleep(iter_wait)
 
-
-if __name__ == "__main__":
-    archive_sesh = ArchiveSesh()
-    url_to_archive = "www.oatbread.org"
-    archived_url = archive_sesh.archive_url(url_to_archive)
-    print(f"Archived URL: {archived_url}")
-
