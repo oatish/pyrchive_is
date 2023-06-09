@@ -1,6 +1,6 @@
 import pytest
 import responses
-from pyrchive.pyrchive import ArchiveSesh
+from pyrchive import ArchiveSesh
 
 # Sample HTML content for mocking the response
 sample_html = """
@@ -15,6 +15,7 @@ sample_html = """
 </html>
 """
 
+
 @responses.activate
 def test_fetch_submit_id():
     responses.add(
@@ -27,6 +28,7 @@ def test_fetch_submit_id():
 
     archive_sesh = ArchiveSesh()
     assert archive_sesh.submit_id == "test_submit_id"
+
 
 @responses.activate
 def test_archive_url():

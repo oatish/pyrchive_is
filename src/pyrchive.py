@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import urllib.parse
 
+
 class ArchiveSesh:
     def __init__(self):
         self.submit_id = self._fetch_submit_id()
@@ -45,4 +46,3 @@ class ArchiveSesh:
             iter += 1
             print(f"Waiting for next iteration... ({iter} of {max_iter})")
             time.sleep(iter_wait)
-
