@@ -1,6 +1,6 @@
 import pytest
 import responses
-from pyrchive.pyrchive import ArchiveSesh
+from pyrchive import ArchiveSesh
 
 # Sample HTML content for mocking the response
 sample_html = """

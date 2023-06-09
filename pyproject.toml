@@ -20,12 +20,12 @@ classifiers = [
     "Programming Language :: Python :: 3.10"
 ]
 requires-python = ">=3.9"
-dynamic = ["version"]
 dependencies = [
     "beautifulsoup4 ~= 4.12.2",
     "requests ~= 2.28.2",
     "responses ~= 0.23.1",
 ]
+version = "0.0.1"
 
 [project.optional-dependencies]
 test = [
@@ -99,7 +99,7 @@ exclude = [
     "**/node_modules",
     "**/__pycache__"
 ]
-venv = "venv3"
+venv = "venv"
 
 reportMissingImports = true
 reportMissingTypeStubs = false
