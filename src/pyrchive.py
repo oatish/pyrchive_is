@@ -46,4 +46,3 @@ class ArchiveSesh:
             iter += 1
             print(f"Waiting for next iteration... ({iter} of {max_iter})")
             time.sleep(iter_wait)
-
